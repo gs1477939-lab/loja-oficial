@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loja Oficial – Vídeos VIP + Tutorial</title>
+  <meta name="description" content="5 vídeos grátis para você começar e 50 vídeos VIP com acesso imediato. Compra segura pela Kiwify.">
+  <meta name="theme-color" content="#111827">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Loja Oficial – Vídeos VIP + Tutorial">
+  <meta property="og:description" content="5 vídeos grátis para você começar e 50 vídeos VIP com acesso imediato.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root{
+      --bg:#0b1020; --card:#111827; --muted:#9CA3AF; --text:#F9FAFB;
+      --brand:#22c55e; --brand-2:#10b981; --danger:#ef4444; --gold:#fbbf24;
+      --shadow:0 10px 30px rgba(0,0,0,.25);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:linear-gradient(180deg,#05070f,#0b1020);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1080px;margin:0 auto;padding:20px}
+    .btn{display:inline-block;padding:14px 20px;border-radius:12px;font-weight:700;border:0;cursor:pointer;transition:.2s;box-shadow:var(--shadow)}
+    .btn-primary{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#06260f}
+    .btn-primary:hover{transform:translateY(-1px);filter:brightness(1.05)}
+    .btn-ghost{background:#ffffff12;border:1px solid #ffffff1f;color:var(--text)}
+    .badge{display:inline-flex;gap:8px;align-items:center;background:#16a34a22;border:1px solid #22c55e33;color:#86efac;padding:6px 10px;border-radius:999px;font-size:12px}
+    header{position:sticky;top:0;z-index:50;background:#05070fb3;backdrop-filter:blur(10px);border-bottom:1px solid #1f2937}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 20px}
+    .logo{font-weight:800;letter-spacing:.3px}
+    .hero{padding:48px 20px 20px}
+    .hero-card{background:radial-gradient(1200px 400px at 50% -200px,#22c55e22,transparent),var(--card);border:1px solid #1f2937;border-radius:var(--radius);padding:28px;display:grid;gap:18px;box-shadow:var(--shadow)}
+    .hero h1{font-size:clamp(26px,4vw,40px);margin:0 0 6px}
+    .row{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .col-6{grid-column:span 6}
+    .col-12{grid-column:span 12}
+    @media(max-width:900px){.col-6{grid-column:span 12}}
+    .section{padding:28px 0}
+    .section h2{margin:0 0 14px;font-size:clamp(22px,3vw,30px)}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+    .card{background:var(--card);border:1px solid #1f2937;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .card-body{padding:14px}
+    .video{aspect-ratio:16/9;width:100%;background:#000}
+    iframe,.video video{width:100%;height:100%;border:0;display:block}
+    .vip-thumb{position:relative;height:160px;background:linear-gradient(180deg,#0b1020,#0f172a)}
+    .vip-thumb::after{content:"🔒 Conteúdo VIP";position:absolute;inset:auto 10px 10px auto;background:#000000a6;color:#fff;padding:6px 10px;border-radius:999px;font-size:12px;border:1px solid #ffffff22}
+    .list{display:grid;gap:10px}
+    details{background:#0f172a;border:1px solid #1f2937;border-radius:14px;padding:16px}
+    summary{cursor:pointer;font-weight:700}
+    .price{font-size:34px;font-weight:900}
+    .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .plan{background:linear-gradient(180deg,#111827,#0b1222);border:1px solid #1f2937;border-radius:var(--radius);padding:18px;display:grid;gap:12px}
+    .plan .tag{color:#fde68a}
+    footer{padding:32px 20px;border-top:1px solid #1f2937;background:#05070f}
+    .kpis{display:flex;gap:10px;flex-wrap:wrap}
+    .kpi{background:#111827;border:1px solid #1f2937;border-radius:12px;padding:8px 10px;font-size:12px;color:#9ca3af}
+    .floating{position:fixed;right:16px;bottom:16px;z-index:60}
+    .trust{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .trust span{font-size:12px;color:#9ca3af;background:#0f172a;border:1px solid #1f2937;border-radius:999px;padding:6px 10px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">🟢 Loja Oficial</div>
+      <a class="btn btn-primary" id="ctaTop" href="#" rel="noopener">Comprar Acesso VIP</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-card">
+        <div class="row">
+          <div class="col-6">
+            <span class="badge">🔥 50 Vídeos VIP • Acesso imediato</span>
+            <h1>Vídeos que vendem. <span style="color:var(--gold)">5 grátis</span> para testar – e pacotão VIP completo.</h1>
+            <p class="muted">Assista agora, com <b>garantia</b> e checkout seguro pela Kiwify. Conteúdo profissional + tutorial para você começar a vender hoje.</p>
+            <div class="kpis">
+              <div class="kpi">⚡ Entrega imediata</div>
+              <div class="kpi">🔒 Compra segura</div>
+              <div class="kpi">📱 Funciona no celular</div>
+              <div class="kpi">🧠 Tutorial incluso</div>
+            </div>
+            <div style="display:flex;gap:10px;margin-top:14px">
+              <a class="btn btn-primary" id="ctaHero" href="#">Quero o VIP agora</a>
+              <a class="btn btn-ghost" href="#gratis">Ver 5 vídeos grátis</a>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="video">
+              <!-- vídeo destaque (YouTube) -->
+              <iframe src="https://www.youtube.com/embed/M7lc1UVf-VE?rel=0&modestbranding=1" title="Apresentação" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 VÍDEOS GRÁTIS -->
+    <section id="gratis" class="section">
+      <h2>🎁 5 Vídeos Grátis</h2>
+      <p class="muted">Amostra grátis para você sentir a qualidade. Quer o pacote completo? Compre o acesso VIP abaixo.</p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="video"><iframe src="https://www.youtube.com/embed/M7lc1UVf-VE?rel=0&modestbranding=1" allowfullscreen title="Vídeo Grátis 1"></iframe></div>
+          <div class="card-body"><b>Vídeo Grátis 1</b><p class="muted">Exemplo de conteúdo.</p></div>
+        </div>
+        <div class="card">
+          <div class="video"><iframe src="https://www.youtube.com/embed/ysz5S6PUM-U?rel=0&modestbranding=1" allowfullscreen title="Vídeo Grátis 2"></iframe></div>
+          <div class="card-body"><b>Vídeo Grátis 2</b><p class="muted">Exemplo de conteúdo.</p></div>
+        </div>
+        <div class="card">
+          <div class="video"><iframe src="https://www.youtube.com/embed/eIho2S0ZahI?rel=0&modestbranding=1" allowfullscreen title="Vídeo Grátis 3"></iframe></div>
+          <div class="card-body"><b>Vídeo Grátis 3</b><p class="muted">Exemplo de conteúdo.</p></div>
+        </div>
+        <div class="card">
+          <div class="video"><iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?rel=0&modestbranding=1" allowfullscreen title="Vídeo Grátis 4"></iframe></div>
+          <div class="card-body"><b>Vídeo Grátis 4</b><p class="muted">Exemplo de conteúdo.</p></div>
+        </div>
+        <div class="card">
+          <div class="video"><iframe src="https://www.youtube.com/embed/oHg5SJYRHA0?rel=0&modestbranding=1" allowfullscreen title="Vídeo Grátis 5"></iframe></div>
+          <div class="card-body"><b>Vídeo Grátis 5</b><p class="muted">Exemplo de conteúdo.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANOS / CHECKOUT -->
+    <section class="section" id="planos">
+      <h2>💎 Acesso VIP</h2>
+      <p class="muted">Escolha um plano e receba o acesso **na hora** pelo seu e-mail.</p>
+
+      <div class="plans">
+        <div class="plan">
+          <div class="tag">Mais acessível</div>
+          <div class="price">Plano 1 Ano</div>
+          <p class="muted">Acesso a todos os 50 vídeos VIP por 12 meses.</p>
+          <a class="btn btn-primary" id="btnAno" href="#">Comprar – 1 ano</a>
+          <small class="muted">✔ Garantia Kiwify • ✔ Suporte por e-mail</small>
+        </div>
+        <div class="plan" style="border:2px solid #22c55eaa">
+          <div class="tag">Recomendado</div>
+          <div class="price">Vitalício</div>
+          <p class="muted">Pague uma vez e tenha acesso para sempre, incluindo atualizações.</p>
+          <a class="btn btn-primary" id="btnVitalicio" href="#">Comprar – Vitalício</a>
+          <small class="muted">⭐ Melhor custo-benefício</small>
+        </div>
+        <div class="plan">
+          <div class="tag">Pacote Pro</div>
+          <div class="price">Materiais Bônus</div>
+          <p class="muted">Artes, roteiros e materiais extras para turbinar as vendas.</p>
+          <a class="btn btn-primary" id="btnMateriais" href="#">Garantir Bônus</a>
+          <small class="muted">🎁 Complemento opcional</small>
+        </div>
+      </div>
+      <div style="margin-top:10px" class="trust">
+        <span>🔒 Checkout seguro Kiwify</span>
+        <span>📧 Entrega imediata por e-mail</span>
+        <span>↩️ Garantia de 7 dias</span>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO VIP (50) -->
+    <section class="section" id="vip">
+      <h2>📦 Catálogo VIP (50 vídeos)</h2>
+      <p class="muted">Veja os títulos abaixo. Para assistir, adquira o acesso VIP.</p>
+
+      <div id="vipGrid" class="grid"></div>
+      <div style="text-align:center;margin-top:16px">
+        <a class="btn btn-primary" id="ctaCatalogo" href="#">Quero assistir agora</a>
+      </div>
+    </section>
+
+    <!-- TUTORIAL / COMO FUNCIONA -->
+    <section class="section" id="tutorial">
+      <h2>🧭 Como começar a vender</h2>
+      <div class="list">
+        <details open>
+          <summary>1) Faça sua compra com segurança</summary>
+          <p class="muted">Clique em qualquer botão “Comprar” acima. O pagamento é processado pela <b>Kiwify</b>. Assim que aprovado, você recebe automaticamente o acesso no e-mail.</p>
+        </details>
+        <details>
+          <summary>2) Receba o acesso imediato</summary>
+          <p class="muted">Após o pagamento, você recebe um link com login da área VIP. Lá estão os 50 vídeos e os materiais bônus (se adquiridos).</p>
+        </details>
+        <details>
+          <summary>3) Tutorial rápido para vender</summary>
+          <ul class="muted">
+            <li>Crie seu <b>link de afiliado</b> (Kiwify) ou venda direta para seus contatos.</li>
+            <li>Use os <b>5 vídeos grátis</b> como isca em grupos/Instagram/TikTok e convide para o VIP.</li>
+            <li>Publique 1–2 provas sociais por dia (prints, depoimentos, resultados permitidos).</li>
+            <li>Siga a rotina: <b>atração</b> (conteúdo), <b>conversa</b> (DM/WhatsApp) e <b>oferta</b> (link de pagamento).</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Dúvidas frequentes</summary>
+          <ul class="muted">
+            <li><b>É seguro?</b> Sim, o pagamento é pela Kiwify (plataforma de pagamentos).</li>
+            <li><b>Recebo na hora?</b> Sim, acesso enviado automaticamente ao e-mail após aprovação.</li>
+            <li><b>Funciona no celular?</b> Sim, 100% responsivo.</li>
+            <li><b>Tem garantia?</b> Sim, 7 dias de garantia legal para reembolso.</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+        <div class="muted">© Loja Oficial – Todos os direitos reservados.</div>
+        <div class="trust">
+          <span>🔐 SSL Ativo</span>
+          <span>✅ Pagamento Kiwify</span>
+          <span>📄 Termos & Política</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante de compra -->
+  <div class="floating">
+    <a class="btn btn-primary" id="ctaFloat" href="#">Liberar Acesso VIP</a>
+  </div>
+
+  <script>
+    // ============================
+    // LINKS DA KIWIFY (seus links)
+    // ============================
+    const LINKS = {
+      vitalicio: "https://pay.kiwify.com.br/DYh76Y1?afid=1",       // Assinatura - Vitalício
+      revenda:  "https://pay.kiwify.com.br/BmsALDh?afid=",         // (opcional) Revenda
+      materiais:"https://kiwify.app/RdakPqF?afid=1bq6BC",          // Materiais bônus
+      checkout: "https://kiwify.app/7uZgMet?afid=1bq6BC",          // Sales Page (principal)
+      umAno:    "https://pay.kiwify.com.br/EexBciz?afid=1k"        // Assinatura - 1 ano
+    };
+
+    // Definir CTAs principais
+    document.getElementById("ctaTop").href     =
+    document.getElementById("ctaHero").href    =
+    document.getElementById("ctaCatalogo").href=
+    document.getElementById("ctaFloat").href   = LINKS.checkout;
+
+    document.getElementById("btnAno").href       = LINKS.umAno;
+    document.getElementById("btnVitalicio").href = LINKS.vitalicio;
+    document.getElementById("btnMateriais").href = LINKS.materiais;
+
+    // ============================
+    // Gerar 50 cards VIP
+    // ============================
+    const vipGrid = document.getElementById("vipGrid");
+    const totalVIP = 50;
+    for(let i=1;i<=totalVIP;i++){
+      const card = document.createElement("article");
+      card.className = "card";
+      card.innerHTML = `
+        <div class="vip-thumb"></div>
+        <div class="card-body">
+          <b>Vídeo VIP #${i}</b>
+          <p class="muted">Conteúdo exclusivo disponível após a compra.</p>
+          <a class="btn btn-primary" href="${LINKS.checkout}">Comprar acesso para assistir</a>
+        </div>`;
+      vipGrid.appendChild(card);
+    }
+
+    // ============================
+    // (opcional) UTM simples
+    // ============================
+    const params = new URLSearchParams(location.search);
+    const utm = params.toString();
+    if(utm){
+      const addUtm = url => url + (url.includes("?") ? "&" : "?") + utm;
+      ["ctaTop","ctaHero","ctaCatalogo","ctaFloat"].forEach(id=>{
+        const a = document.getElementById(id); a.href = addUtm(a.href);
+      });
+      ["btnAno","btnVitalicio","btnMateriais"].forEach(id=>{
+        const a = document.getElementById(id); a.href = addUtm(a.href);
+      });
+    }
+  </script>
+</body>
+</html>
